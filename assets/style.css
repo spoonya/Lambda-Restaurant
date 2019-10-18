@@ -43,7 +43,7 @@ h6 {
 
     width: 100%;
 
-    box-shadow: inset 0 100px 20px rgba(0, 0, 0, .35);
+    box-shadow: inset 0 100px 20px rgba(0, 0, 0, .3);
 }
 
 .header-inner {
@@ -59,11 +59,14 @@ h6 {
 
     text-transform: uppercase;
 
-    color: #fff;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px #000;
 }
 
 .nav {
     display: flex;
+
+    align-items: center;
 }
 
 .nav-item {
@@ -84,6 +87,28 @@ h6 {
     transition: .2s linear;
 
     border-top: 4px solid rgba(255, 255, 255, .9);
+}
+
+.social-item {
+    display: flex;
+
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.social-icon {
+    display: block;
+
+    height: 25px;
+
+    fill: #dab33e;
+}
+
+.social-item:hover .social-icon {
+    transition: fill .1s linear;
+
+    fill: #ffb33e;
 }
 
 /*.nav-item:hover::before {
@@ -198,20 +223,25 @@ h6 {
 }
 
 .about-inner {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+
     width: 100%;
     max-width: 1030px;
     margin: 0 auto;
+
+    justify-content: space-between;
 }
 
 .about-food {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .about-title {
@@ -232,16 +262,163 @@ h6 {
 .about-txt {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+
     margin-bottom: 50px;
 }
 
 .about-cook {
-	transform: translateX(40px);
+    transform: translateX(40px);
 }
 
 .about-dish {
-	display: block;
-	width: 100%;
-	min-width: 100%;
-	height: auto;
+    display: block;
+
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+
+/*Line::after;
+=========================*/
+.white--line::after {
+    display: block;
+
+    margin: 30px 0;
+
+    content: url('images/ingridients/white-line.png');
+    text-align: center;
+}
+
+.gold--line::after {
+    display: block;
+
+    margin: 30px 0;
+
+    content: url('images/gold-line.png');
+    text-align: center;
+}
+
+/*Ingridients
+=========================*/
+.ingridients {
+    padding: 100px 0;
+
+    background: url('images/ingridients/ingridients-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.ingridients-inner {
+    display: flex;
+
+    justify-content: flex-end;
+}
+
+.ingridients-content {
+    display: flex;
+    flex-direction: column;
+
+    width: 570px;
+    padding: 58px 0;
+
+    background-color: rgba(0, 0, 0, .67);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.ingridients-title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    font-weight: 400;
+
+    color: #fff;
+}
+
+.ingredients-txt {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin-bottom: 70px;
+    padding: 0 70px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.ingredients-images {
+    display: flex;
+
+    width: 75%;
+    margin: 0 auto;
+
+    justify-content: space-evenly;
+}
+
+/*Menu
+=========================*/
+.menu {
+    padding: 100px 0;
+
+    background: url('images/menu-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+/*Reviews
+=========================*/
+.reviews {
+    padding: 100px 0;
+
+    background: url('images/reviews-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.reviews-inner {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 65px 0;
+    width: 770px;
+
+    background-color: rgba(0, 0, 0, .9);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    font-weight: 400;
+
+    color: #fff;
+}
+
+.reviews-txt {
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-style: italic;
+    line-height: 2;
+
+    margin-bottom: 50px;
+    padding: 0 70px;
+
+    text-align: center;
+
+    color: #dde0df;
+}
+
+.reviews-author {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+
+    color: #fff;
 }
