@@ -24,6 +24,45 @@ h6 {
     margin: 0;
 }
 
+/*Common styles
+=========================*/
+
+/*Titles*/
+.gold--title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    font-weight: 400;
+
+    color: #c90;
+}
+
+.white--title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    font-weight: 400;
+
+    color: #fff;
+}
+
+/*Line::after*/
+.white--line::after {
+    display: block;
+
+    margin: 30px 0;
+
+    content: url('images/ingridients/white-line.png');
+    text-align: center;
+}
+
+.gold--line::after {
+    display: block;
+
+    margin: 30px 0;
+
+    content: url('images/gold-line.png');
+    text-align: center;
+}
+
 /*Container
 =========================*/
 .container {
@@ -244,21 +283,6 @@ h6 {
     align-items: center;
 }
 
-.about-title {
-    font-family: 'Yeseva One', cursive;
-    font-size: 36px;
-
-    color: #c90;
-}
-
-.about-title::after {
-    display: block;
-
-    margin: 30px 0;
-
-    content: url('images/gold-line.png');
-}
-
 .about-txt {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -276,26 +300,6 @@ h6 {
     width: 100%;
     min-width: 100%;
     height: auto;
-}
-
-/*Line::after;
-=========================*/
-.white--line::after {
-    display: block;
-
-    margin: 30px 0;
-
-    content: url('images/ingridients/white-line.png');
-    text-align: center;
-}
-
-.gold--line::after {
-    display: block;
-
-    margin: 30px 0;
-
-    content: url('images/gold-line.png');
-    text-align: center;
 }
 
 /*Ingridients
@@ -324,14 +328,6 @@ h6 {
 
     align-items: center;
     justify-content: center;
-}
-
-.ingridients-title {
-    font-family: 'Yeseva One', cursive;
-    font-size: 36px;
-    font-weight: 400;
-
-    color: #fff;
 }
 
 .ingredients-txt {
@@ -385,21 +381,13 @@ h6 {
     display: flex;
     flex-direction: column;
 
-    padding: 65px 0;
     width: 770px;
+    padding: 65px 0;
 
     background-color: rgba(0, 0, 0, .9);
 
     align-items: center;
     justify-content: center;
-}
-
-.reviews-title {
-    font-family: 'Yeseva One', cursive;
-    font-size: 36px;
-    font-weight: 400;
-
-    color: #fff;
 }
 
 .reviews-txt {
@@ -421,4 +409,103 @@ h6 {
     font-size: 18px;
 
     color: #fff;
+}
+
+/*Reservations
+=========================*/
+.reservations {
+    background: url('images/reservations/reservations-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.reservations-inner {
+    display: flex;
+
+    padding: 100px 110px 100px 25px;
+
+    justify-content: space-between;
+}
+
+.reservations-images {
+    display: flex;
+
+    padding-right: 70px;
+}
+
+.reservations-photo {
+    display: block;
+
+    margin: 0 15px;
+}
+
+.reservations-content {
+    text-align: center;
+}
+
+.reservations-txt1 {
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+.reservations-txt2 {
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.reservations-form {
+   
+}
+
+.form-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+
+    width: 200px;
+    height: 35px;
+    padding: 0 20px;
+
+    border: 1px #c8c6c6 solid;
+    outline: none;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.form-item:hover {
+    transition: background .1s linear;
+
+    border-color: rgb(190, 180, 180);
+}
+
+.form-item:focus {
+    transition: background .1s linear;
+
+    border-color: #c89f2d;
+}
+
+.form-btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+    padding: 10px 80px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #c9a131;
+}
+
+.form-btn:hover {
+    transition: background .1s linear;
+
+    background-color: #ffb33e;
+}
+
+.form-item-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
 }
