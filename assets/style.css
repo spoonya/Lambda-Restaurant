@@ -27,7 +27,7 @@ h6 {
 /*Common styles
 =========================*/
 
-/*Titles*/
+/*Title*/
 .gold--title {
     font-family: 'Yeseva One', cursive;
     font-size: 36px;
@@ -48,7 +48,7 @@ h6 {
 .white--line::after {
     display: block;
 
-    margin: 30px 0;
+    margin: 15px 0;
 
     content: url('images/ingridients/white-line.png');
     text-align: center;
@@ -57,7 +57,7 @@ h6 {
 .gold--line::after {
     display: block;
 
-    margin: 30px 0;
+    margin: 15px 0;
 
     content: url('images/gold-line.png');
     text-align: center;
@@ -355,10 +355,80 @@ h6 {
 /*Menu
 =========================*/
 .menu {
-    padding: 100px 0;
+    padding: 100px 110px;
 
     background: url('images/menu-bg.jpg') center no-repeat;
     background-size: cover;
+}
+
+.menu-inner {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.submenu {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.submenu-title {
+    text-align: center;
+}
+
+.submenu-item {
+    margin-bottom: 40px;
+}
+
+.submenu-item-title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 21px;
+    font-weight: 400;
+
+    display: flex;
+
+    color: #c89f2d;
+
+    justify-content: space-between;
+}
+
+.submenu-item-txt::before {
+    display: block;
+
+    width: 100%;
+    height: 1px;
+    margin: 12px 0;
+
+    content: '';
+
+    background-color: rgba(200, 159, 45, .35);
+}
+
+.special {
+    position: relative;
+
+    padding: 10px;
+
+    border: 1px rgba(200, 159, 45, .35) solid;
+}
+
+.special::before {
+    font-size: 14px;
+
+    position: absolute;
+    top: -27px;
+    right: -1px;
+
+    display: block;
+
+    padding: 5px 15px;
+
+    content: 'Special';
+
+    color: #fff;
+    background-color: #d7bd72;
 }
 
 /*Reviews
@@ -450,12 +520,11 @@ h6 {
 
 .reservations-txt2 {
     line-height: 1.5;
+
     margin-bottom: 40px;
 }
 
-.reservations-form {
-   
-}
+
 
 .form-item {
     font-family: 'Open Sans', sans-serif;
@@ -505,7 +574,73 @@ h6 {
 
 .form-item-inner {
     display: flex;
-    justify-content: space-between;
+
     width: 100%;
     margin-bottom: 20px;
+
+    justify-content: space-between;
+}
+
+/*Footer
+=========================*/
+.footer {
+    padding: 52px 40px;
+
+    background-color: #191919;
+}
+
+.footer-inner {
+    display: flex;
+
+    text-align: center;
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 33.33333%;
+}
+
+.footer-title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 21px;
+    font-weight: 400;
+
+    color: #fff;
+}
+
+.footer-txt {
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #fff;
+}
+
+.footer-bold {
+    font-weight: 700;
+    font-style: normal;
+
+    color: #fff;
+}
+
+.footer-social {
+    display: flex;
+
+    margin-top: auto;
+
+    justify-content: center;
+}
+
+.footer .social-icon {
+    height: 20px;
+
+    fill: #fff;
+}
+
+.footer .white--line::after {
+    content: url('images/footer-line.png');
 }
