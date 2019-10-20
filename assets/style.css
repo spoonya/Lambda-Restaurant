@@ -168,7 +168,7 @@ h6 {
     background-color: rgba(255, 255, 255, .9);
 }
 
-.nav-item:hover::before{
+.nav-item:hover::before {
     width: 100%;
 }
 
@@ -515,6 +515,7 @@ h6 {
 .reservations-images {
     display: flex;
 
+    width: 60%;
     padding-right: 70px;
 }
 
@@ -540,7 +541,14 @@ h6 {
     margin-bottom: 40px;
 }
 
+.form-item-inner {
+    display: flex;
 
+    width: 100%;
+    margin-bottom: 20px;
+
+    justify-content: space-between;
+}
 
 .form-item {
     font-family: 'Open Sans', sans-serif;
@@ -556,10 +564,35 @@ h6 {
     background-color: rgba(255, 255, 255, .5);
 }
 
+.form-item-inner:nth-child(2) .form-item:nth-child(2) {
+    padding: 0 0 0 20px;
+}
+
+.item-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    display: block;
+
+    margin: 0 0 5px 0;
+
+    text-align: left;
+
+    color: #c9a131;
+}
+
 .form-item:hover {
     transition: background .1s linear;
 
     border-color: rgb(190, 180, 180);
+}
+
+.form-item-container {
+    position: relative;
+
+    margin-right: 30px;
+    margin-bottom: 10px;
 }
 
 .form-item:focus {
@@ -572,6 +605,7 @@ h6 {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 
+    margin-top: auto;
     padding: 10px 80px;
 
     cursor: pointer;
@@ -586,15 +620,6 @@ h6 {
     transition: background .1s linear;
 
     background-color: #ffb33e;
-}
-
-.form-item-inner {
-    display: flex;
-
-    width: 100%;
-    margin-bottom: 20px;
-
-    justify-content: space-between;
 }
 
 /*Footer

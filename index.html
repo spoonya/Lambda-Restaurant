@@ -245,15 +245,27 @@
                     <div class="reservations-txt2">Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</div>
                     <form class="reservations-form">
                         <div class="form-item-inner">
-                            <input type="text" class="form-item">
-                            <input type="email" class="form-item">
+                            <label class="form-item-container">
+                                <span class="item-label">Name</span>
+                                <input id="name" type="text" class="form-item">
+                            </label>
+                            <label class="form-item-container">
+                                <span class="item-label">Email</span>
+                                <input id="email" type="email" class="form-item">
+                            </label>
                         </div>
                         <div class="form-item-inner">
-                            <input type="date" class="form-item">
-                            <select class="form-item">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                            </select>
+                            <label class="form-item-container">
+                                <span class="item-label">Date</span>
+                                <input id="date" type="date" class="form-item">
+                            </label>
+                            <label class="form-item-container">
+                                <span class="item-label">Party number</span>
+                                <select id="pnum" class="form-item">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </label>
                         </div>
                         <input class="form-btn" type="submit" value="Book now!" name="">
                     </form>
