@@ -41,6 +41,8 @@ h6 {
     font-size: 36px;
     font-weight: 400;
 
+    text-align: center;
+
     color: #fff;
 }
 
@@ -181,7 +183,8 @@ h6 {
 .intro {
     padding: 175px 0 140px;
 
-    background: url('images/intro.jpg') center no-repeat;
+    background: #282828
+    url('images/intro.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -464,16 +467,73 @@ h6 {
 }
 
 .reviews-content {
-    display: flex;
-    flex-direction: column;
-
     width: 770px;
     padding: 65px 0;
 
     background-color: rgba(0, 0, 0, .9);
+}
+
+.reviews-slider {
+    visibility: hidden;
+    overflow: hidden;
+
+    height: 346px;
+}
+
+.slick-arrow {
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+}
+
+.prev,
+.next {
+    font-size: 50px;
+
+    position: absolute;
+
+    transform: translateY(-50px);
+
+    color: #c89f2d;
+    background: none;
+}
+
+.next {
+    right: 0;
+
+    padding-right: 10px;
+}
+
+.prev {
+    left: 0;
+
+    padding-left: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    transition: color .1s linear;
+
+    color: #ffb33e;
+}
+
+.prev:active,
+.next:active {
+    opacity: .5;
+}
+
+.slick-slide {
+    outline: none;
+}
+
+.reviews-slider.slick-initialized {
+    display: flex;
+    visibility: visible;
+
+    height: auto;
 
     align-items: center;
-    justify-content: center;
 }
 
 .reviews-txt {
@@ -493,6 +553,8 @@ h6 {
 .reviews-author {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
+
+    text-align: center;
 
     color: #fff;
 }
@@ -593,6 +655,10 @@ h6 {
 
     margin-right: 30px;
     margin-bottom: 10px;
+}
+
+.form-item-container:nth-child(even) {
+    margin-right: 0;
 }
 
 .form-item:focus {
