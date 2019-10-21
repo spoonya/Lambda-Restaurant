@@ -185,6 +185,7 @@ h6 {
 
     background: #282828
     url('images/intro.jpg') center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -268,6 +269,7 @@ h6 {
     padding: 40px 0;
 
     background: url('images/about/about-bg.jpg') center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -318,6 +320,7 @@ h6 {
     padding: 100px 0;
 
     background: url('images/ingridients/ingridients-bg.jpg') center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -456,6 +459,7 @@ h6 {
     padding: 100px 0;
 
     background: url('images/reviews-bg.jpg') center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -491,8 +495,6 @@ h6 {
 .next {
     font-size: 50px;
 
-    position: absolute;
-
     transform: translateY(-50px);
 
     color: #c89f2d;
@@ -500,14 +502,10 @@ h6 {
 }
 
 .next {
-    right: 0;
-
     padding-right: 10px;
 }
 
 .prev {
-    left: 0;
-
     padding-left: 10px;
 }
 
