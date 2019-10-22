@@ -2,7 +2,7 @@
     let slider = $("#reviewsSlider");
 
    	slider.slick({
-      autoplay:  true,
+      	autoplay:  true,
   		infinite: true,
   		slidesToShow: 1,
   		slidesToScroll: 1,
