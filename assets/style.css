@@ -806,6 +806,15 @@ h6 {
     .footer-social {
         margin-top: 20px;
     }
+
+     /*Reviews*/
+    .reviews-content {
+        width: 100%;
+    }
+
+    .reviews-txt {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -861,12 +870,13 @@ h6 {
     }
 
     .intro-buttons {
-        flex-direction: column;
+        flex-direction: column; 
 
         width: 50%;
     }
 
     .intro-btn {
+        font-size: 13px;
         margin-bottom: 20px;
         padding: 10px 40px;
     }
@@ -876,6 +886,7 @@ h6 {
         width: 80%;
         margin: 0 auto;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -920,5 +931,15 @@ h6 {
 
         margin-bottom: 20px;
         padding: 7px 40px;
+    }
+
+    /*Reviews*/
+    .reviews-txt {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .reviews-title {
+        font-size: 25px;
     }
 }
