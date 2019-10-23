@@ -178,6 +178,53 @@ h6 {
     margin-left: 0;
 }
 
+/*Burger
+=========================*/
+.burger {
+    display: none;
+
+    padding: 10px 2px;
+
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.burger-item {
+    position: relative;
+
+    display: block;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: #ffb33e;
+}
+
+.burger-item::before,
+.burger-item::after {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background-color: #ffb33e;
+}
+
+.burger-item::before {
+    top: 8px;
+}
+
+.burger-item::after {
+    bottom: 8px;
+}
+
 /*Intro
 =========================*/
 .intro {
@@ -306,12 +353,16 @@ h6 {
     transform: translateX(40px);
 }
 
+.about-cook-img {
+    width: 100%;
+}
+
 .about-dish {
     display: block;
 
     width: 100%;
-    min-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 /*ingredients
@@ -784,6 +835,37 @@ h6 {
 @media (max-width: 1067px) {
     /*Header*/
     .nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        display: none;
+        flex-direction: column;
+
+        width: 100%;
+        height: 0;
+
+        text-align: right;
+
+        opacity: 0;
+        overflow: hidde;
+        background-color: #282828;
+        transition: height 0ms 400ms, opacity 400ms 0ms;
+    }
+
+    .nav.show {
+        display: flex;
+        height: auto;
+        transition: height 0ms 0ms, opacity 600ms 0ms;
+        opacity: 1;
+    }
+
+    .nav-item {
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .nav-item::before {
         display: none;
     }
 
@@ -803,6 +885,11 @@ h6 {
     .intro-btn {
         padding: 15px 45px;
     }
+
+    /*Burger*/
+    .burger {
+        display: block;
+    }
 }
 
 @media (max-width: 961px) {
@@ -818,6 +905,19 @@ h6 {
 
     .submenu:nth-child(4) {
         margin-top: 0;
+    }
+
+    /*About*/
+    .about-img {
+        margin-left: 20px;
+    }
+
+    .about-food {
+        width: 70%;
+    }
+
+    .about-txt {
+        font-size: 20px;
     }
 
     /*Footer*/
@@ -845,6 +945,15 @@ h6 {
         padding: 0 20px;
     }
 
+    /*Ingredients*/
+    .ingredients-txt {
+        font-size: 20px;
+    }
+
+    /*Reservations*/
+    .reservations-content {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -868,17 +977,25 @@ h6 {
         font-size: 20px;
     }
 
-    .about-dish {
-        display: none;
+    .about-cook-img {
+        width: 80%;
     }
 
-    /*ingredients*/
+    .about-dish {
+        width: 60%;
+    }
+
+    .about-img {
+        margin: 0;
+    }
+
+    .about-inner {
+        flex-direction: column;
+    }
+
+    /*Ingredients*/
     .ingredients-inner {
         justify-content: center;
-    }
-
-    .ingredients-txt {
-        font-size: 20px;
     }
 
     /*Menu*/
@@ -922,9 +1039,9 @@ h6 {
         width: 80%;
         margin: 0 auto;
     }
-    
+
     /*Reviews*/
-    .prev, 
+    .prev,
     .next {
         font-size: 35px;
     }
@@ -936,6 +1053,11 @@ h6 {
 
     .reservations-content {
         width: 80%;
+    }
+
+    /*About*/
+    .about-img {
+        display: none;
     }
 }
 
@@ -972,7 +1094,7 @@ h6 {
 
     /*Header*/
     .header-logo {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     /*Intro*/
@@ -1002,16 +1124,18 @@ h6 {
     .reservations-content {
         width: 100%;
     }
-    
+
     .reservations-form {
         display: flex;
         flex-direction: column;
+
         align-items: center;
     }
 
     .form-item-inner {
         display: flex;
         flex-direction: column;
+
         margin-bottom: 0;
     }
 
