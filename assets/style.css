@@ -750,8 +750,37 @@ h6 {
     content: url('images/footer-line.png');
 }
 
-/*Footer
+/*Media
 =========================*/
+
+@media (max-width: 1200px) {
+    /*Reservations*/
+    .reservations-inner {
+        padding: 100px 0;
+
+        flex-wrap: wrap;
+    }
+
+    .reservations-images {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding-right: 0;
+
+        justify-content: center;
+    }
+
+    .reservations-content {
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+        margin: 0 auto;
+
+        align-items: center;
+    }
+}
+
 @media (max-width: 1067px) {
     /*Header*/
     .nav {
@@ -807,7 +836,7 @@ h6 {
         margin-top: 20px;
     }
 
-     /*Reviews*/
+    /*Reviews*/
     .reviews-content {
         width: 100%;
     }
@@ -815,6 +844,7 @@ h6 {
     .reviews-txt {
         padding: 0 20px;
     }
+
 }
 
 @media (max-width: 767px) {
@@ -856,6 +886,11 @@ h6 {
         padding: 100px 0;
     }
 
+    /*Reservations*/
+    .reservations-content {
+        width: 60%;
+    }
+
     /*Footer*/
     .footer-item {
         width: 70%;
@@ -870,13 +905,14 @@ h6 {
     }
 
     .intro-buttons {
-        flex-direction: column; 
+        flex-direction: column;
 
         width: 50%;
     }
 
     .intro-btn {
         font-size: 13px;
+
         margin-bottom: 20px;
         padding: 10px 40px;
     }
@@ -886,7 +922,21 @@ h6 {
         width: 80%;
         margin: 0 auto;
     }
+    
+    /*Reviews*/
+    .prev, 
+    .next {
+        font-size: 35px;
+    }
 
+    /*Resrvations*/
+    .reservations-images {
+        display: none;
+    }
+
+    .reservations-content {
+        width: 80%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -904,6 +954,10 @@ h6 {
 
     .ingredients-txt {
         padding: 0 20px;
+    }
+
+    .ingredients-images-item {
+        margin-bottom: 10px;
     }
 
     /*Menu*/
@@ -936,10 +990,40 @@ h6 {
     /*Reviews*/
     .reviews-txt {
         font-size: 16px;
+
         padding: 0 10px;
     }
 
     .reviews-title {
         font-size: 25px;
+    }
+
+    /*Reservations*/
+    .reservations-content {
+        width: 100%;
+    }
+    
+    .reservations-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-item-inner {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .form-item-container {
+        margin-right: 0;
+    }
+
+    .item-label {
+        text-align: center;
+    }
+
+    .form-btn {
+        margin-top: 10px;
     }
 }
