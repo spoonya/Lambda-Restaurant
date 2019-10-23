@@ -29,32 +29,34 @@
         </symbol>
     </svg>
     <!--Header-->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-inner">
-                <h1 class="header-logo">Lambda</h1>
+                <a href="" class="header-logo"><h1 class="header-logo">Lambda</h1></a>
                 <nav class="nav" id="nav">
-                    <a href="#" class="nav-item">Home</a>
-                    <a href="#" class="nav-item">About</a>
-                    <a href="#" class="nav-item">Ingredients</a>
-                    <a href="#" class="nav-item">Menu</a>
-                    <a href="#" class="nav-item">Reviews</a>
-                    <a href="#" class="nav-item">Reservations</a>
-                    <a href="#" class="social-item">
-                        <svg class="social-icon">
-                            <use xlink:href="#twttr"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-item">
-                        <svg class="social-icon">
-                            <use xlink:href="#youtube"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-item">
-                        <svg class="social-icon">
-                            <use xlink:href="#fcb"></use>
-                        </svg>
-                    </a>
+                    <a href="#" class="nav-item" data-scroll = "#intro">Home</a>
+                    <a href="#" class="nav-item" data-scroll = "#about">About</a>
+                    <a href="#" class="nav-item" data-scroll = "#ingredients">Ingredients</a>
+                    <a href="#" class="nav-item" data-scroll = "#menu">Menu</a>
+                    <a href="#" class="nav-item" data-scroll = "#reviews">Reviews</a>
+                    <a href="#" class="nav-item" data-scroll = "#reservations">Reservations</a>
+                    <div class="social">
+                        <a href="#" class="social-item">
+                            <svg class="social-icon">
+                                <use xlink:href="#twttr"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-item">
+                            <svg class="social-icon">
+                                <use xlink:href="#youtube"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-item">
+                            <svg class="social-icon">
+                                <use xlink:href="#fcb"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </nav>
                 <!--Mini menu-->
                 <button class="burger" id="navToggle">
@@ -64,7 +66,7 @@
         </div>
     </header>
     <!--Intro-->
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <div class="intro-inner">
                 <h2 class="intro-title">the right ingredients for the right food</h2>
@@ -76,7 +78,7 @@
         </div>
     </section>
     <!--About-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about-inner">
                 <div class="about-food">
@@ -93,7 +95,7 @@
         </div>
     </section>
     <!--Ingredients-->
-    <section class="ingredients">
+    <section class="ingredients" id="ingredients">
         <div class="container">
             <div class="ingredients-inner">
                 <div class="ingredients-content">
@@ -109,7 +111,7 @@
         </div>
     </section>
     <!--Menu-->
-    <section class="menu">
+    <section class="menu" id="menu">
         <div class="container">
             <div class="menu-inner">
                 <div class="submenu">
@@ -212,7 +214,7 @@
         </div> <!-- /.container -->
     </section> <!-- /.menu -->
     <!--Reviews-->
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <div class="reviews-inner">
                 <div class="reviews-content">
@@ -232,7 +234,7 @@
         </div> <!-- /.container -->
     </section> <!-- /.reviews -->
     <!--Reservations-->
-    <section class="reservations">
+    <section class="reservations" id="reservations">
         <div class="container">
             <div class="reservations-inner">
                 <div class="reservations-images">
@@ -274,7 +276,7 @@
         </div> <!-- /.container -->
     </section> <!-- /.reservations -->
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-item">

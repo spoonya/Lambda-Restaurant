@@ -87,6 +87,30 @@ h6 {
     box-shadow: inset 0 100px 20px rgba(0, 0, 0, .3);
 }
 
+.header.fixed {
+    position: fixed;
+
+    background-color: rgba(40, 40, 40, .9);
+}
+
+.header.fixed .header-inner {
+    padding: 5px 0;
+}
+
+.header.fixed .header-logo {
+    font-size: 25px;
+}
+
+.header.fixed .nav-item:hover {
+    transition: color .1s linear;
+
+    color: rgba(255, 255, 255, .8);
+}
+
+.header.fixed .social {
+    display: none;
+}
+
 .header-inner {
     position: relative;
 
@@ -101,10 +125,12 @@ h6 {
 .header-logo {
     font-family: 'Yeseva One', cursive;
     font-size: 36px;
+    font-style: normal;
 
+    text-decoration: none;
     text-transform: uppercase;
 
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-shadow: 2px 2px 2px #000;
 }
 
@@ -127,11 +153,9 @@ h6 {
     color: #fff;
 }
 
-/*.nav-item:hover {
-    transition: .2s linear;
-
-    border-top: 4px solid rgba(255, 255, 255, .9);
-}*/
+.social {
+    display: flex;
+}
 
 .social-item {
     display: flex;
@@ -183,7 +207,7 @@ h6 {
 .burger {
     display: none;
 
-    padding: 10px 2px;
+    padding: 14px 4px;
 
     cursor: pointer;
 
@@ -197,8 +221,8 @@ h6 {
 
     display: block;
 
-    width: 30px;
-    height: 3px;
+    width: 35px;
+    height: 2px;
 
     background-color: #ffb33e;
 }
@@ -834,35 +858,57 @@ h6 {
 
 @media (max-width: 1067px) {
     /*Header*/
+
+    .header.fixed {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .header.fixed .header-logo {
+        visibility: hidden;
+    }
+
+    .header.fixed .social {
+        display: flex;
+    }
+
     .nav {
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 0;
         right: 0;
 
-        display: none;
+        visibility: hidden;
         flex-direction: column;
 
-        width: 100%;
-        height: 0;
+        width: 50vw;
+        height: 100vh;
 
-        text-align: right;
+        transition: opacity .2s linear;
 
         opacity: 0;
-        overflow: hidde;
-        background-color: #282828;
-        transition: height 0ms 400ms, opacity 400ms 0ms;
+        background-color: rgba(20, 20, 20, .9);
+
+        justify-content: center;
     }
 
     .nav.show {
         display: flex;
-        height: auto;
-        transition: height 0ms 0ms, opacity 600ms 0ms;
+        visibility: visible;
+
         opacity: 1;
     }
 
     .nav-item {
+        font-size: 25px;
+
         margin: 0;
-        padding: 5px 0;
+        margin: 15px 0;
+    }
+
+    .social {
+        display: flex;
+
+        margin-top: 20px;
     }
 
     .nav-item::before {
