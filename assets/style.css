@@ -1143,6 +1143,10 @@ h6 {
         font-size: 25px;
     }
 
+    .nav {
+        width: 100vw;
+    }
+
     /*Intro*/
     .intro-title {
         font-size: 35px;
