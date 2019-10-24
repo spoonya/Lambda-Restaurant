@@ -104,7 +104,7 @@ h6 {
 .header.fixed .nav-item:hover {
     transition: color .1s linear;
 
-    color: rgba(255, 255, 255, .8);
+    color: #ffb33e;
 }
 
 .header.fixed .social {
@@ -858,6 +858,10 @@ h6 {
 
 @media (max-width: 1067px) {
     /*Header*/
+    
+    .header.fixed .header-inner {
+        padding: 50px 0;
+    }
 
     .header.fixed {
         background-color: transparent;
@@ -901,7 +905,6 @@ h6 {
     .nav-item {
         font-size: 25px;
 
-        margin: 0;
         margin: 15px 0;
     }
 
